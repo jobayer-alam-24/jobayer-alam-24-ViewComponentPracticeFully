@@ -1,0 +1,23 @@
+@model List<Product>;
+<div class="container mt-5">
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>ISBN</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var Product in Model)
+            {
+                <tr>
+                    <td>@Product.ID</td>
+                    <td>@Product.Name</td>
+                    <td>@Product.ISBN</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
